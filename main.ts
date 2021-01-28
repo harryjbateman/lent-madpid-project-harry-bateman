@@ -1,3 +1,6 @@
+statusbars.onZero(StatusBarKind.Health, function (status) {
+    game.over(false)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, function (sprite, location) {
     game.over(true)
     game.showLongText("Well Done!", DialogLayout.Top)
